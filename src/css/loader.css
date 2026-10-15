@@ -1,0 +1,25 @@
+/* Loader from css-loader: https://github.com/vineethtrv/css-loader */
+.loader {
+  display: none;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+  border: 5px solid #4e75ff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+.loader.is-visible {
+  display: inline-block;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
